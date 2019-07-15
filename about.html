@@ -3,20 +3,37 @@
     <head>
             <link rel="stylesheet" type="text/css" href="style.css">
             <title>BrandonOst.net - About</title>
+
+            <script> 
+                function showNavBar(){
+                    console.log(document.getElementById("navB").getAttribute("display"));
+                    if( document.getElementById("navB").getAttribute("display") == "none" ){
+                        document.getElementById("navB").setAttribute("display", "inline")
+                    } else{
+                        document.getElementById("navB").setAttribute("display", "none")
+                    }
+
+                }
+            </script>
     </head>
 
     <body>
-
             <header>
-
-                <a href="/about.html" style="text-decoration: none;">
-                <div class="header_bg">
+               <!-- <a href="/about.html" style="text-decoration: none;"> -->
+                <div class="header_bg" onclick="showNavBar()">
                     <h1>BrandonOst.net</h1>
-                    <div class="nav-menu-drop"></div>
+                    <div class="nav-bar">
+                            <button id="navBtn" class="navBtn"> Nav Menu</button>
+                            <div id="navB" class="nav-bar-content">
+                                <a href="/about.html">About Me</a>
+                                <a href="/blog.html">Blog</a>
+                                <a href="/projects.html">Portfolio</a>
+                            </div>
+                        </div>
                 </div>
-                </a>
-                
+                <!--</a>-->
             </header>
+
             <br>
             <div class="card">
                 <div>
@@ -39,8 +56,8 @@
                     </p>
                     <p>
                         After graduating High School I attended Rochester Institute of Technology for 3 years in pursuit 
-                        of a Bachelors degree in Computer Science. I did not graduate, but instead moved back home to re-evaluate the
-                        choices I made in college. In the mean time I've been taking courses at the local community college and working
+                        of a Bachelors degree in Computer Science. I did not graduate, but instead moved back home to decide what I want to do with my future.
+                         In the mean time I've been taking courses at the local community college and working
                         part time at a restaurant. That brings us to the future. I plan on either finishing my degree at another University
                         or finding employment in the software industry, whichever happens first. 
                     </p>
