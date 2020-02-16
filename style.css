@@ -10,7 +10,7 @@
         bottom: 0;
         left: -15px;
         right: 0px;
-        background-color: rgb(255, 199, 78);
+        background-color: rgb(220, 95, 35);
         width: 120%;
         height: 100%;
         transform: skewY(-3deg);
@@ -21,7 +21,7 @@
     }
 
     .header_bg:hover{
-        background-color: orange;
+        background-color: rgb(225, 120, 70);
         transition: 0.3s;
         top: 20px;
         text-shadow: 5px 5px black;

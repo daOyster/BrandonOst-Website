@@ -1,42 +1,27 @@
-<!DOCTYPE html>
-<html>
+<hmtl>
     <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <title>BrandonOst.net - About</title>
-
-            <script> 
-                function showNavBar(){
-                    console.log(document.getElementById("navB").getAttribute("display"));
-                    if( document.getElementById("navB").getAttribute("display") == "none" ){
-                        document.getElementById("navB").setAttribute("display", "inline")
-                    } else{
-                        document.getElementById("navB").setAttribute("display", "none")
-                    }
-
-                }
-            </script>
+        <title>BrandonOst.net - Nav Test</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <meta name="theme-color" content="#b44619">
     </head>
-
     <body>
-            <header>
-               <!-- <a href="/about.html" style="text-decoration: none;"> -->
-                <div class="header_bg" onclick="showNavBar()">
+        <div class="slant">
+
+            <nav id="mynav" class="top-nav">
+                <a href="/about.html">About Me</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/projects.html">Portfolio</a>
+                <a href="/navtest.html">Nav Test</a>
+            </nav>
+            <section id="sad" class="top-banner">
+                <div class="top-banner-overlay">
+                    <!-- stuff here -->
                     <h1>BrandonOst.net</h1>
-                    <div class="nav-bar">
-                            <button id="navBtn" class="navBtn"> Nav Menu</button>
-                            <div id="navB" class="nav-bar-content">
-                                <a href="/about.html">About Me</a>
-                                <a href="/blog.html">Blog</a>
-                                <a href="/projects.html">Portfolio</a>
-                                <a href="/navtest.html">Nav Test</a>
-                                
-                            </div>
-                        </div>
                 </div>
-                <!--</a>-->
-            </header>
-
-
+            </section>
+        </div>
+        <br>        
+        <div class="v-spacer" style="height: 180px;"></div>
             <div class="card">
                 <div>
                     <h1>About Me</h1>
@@ -66,4 +51,4 @@
                 </div>
             </div>
     </body>
-</html>
+</hmtl>

@@ -1,0 +1,77 @@
+.top-nav {
+  overflow: hidden;
+  /* background-color: #666; */
+  background-color: rgb(180, 70, 25);
+
+
+  filter: drop-shadow(0 10px 5px rgb(0, 0, 0));
+  height: 100px;
+  bottom: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slant {
+  position: fixed;
+  top: -40pt;
+  right: 0;
+  left: 0;
+  height: 40px;
+  vertical-align: bottom;
+  transform: skewY(-2deg);
+}
+
+.top-nav a {
+  float: left;
+  display: block;
+  color:rgb(180, 70, 25);
+  background: #f2f2f2;
+  text-align: center;
+  padding: 6px 16px;
+  margin-top: 60px;
+  height: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  transition-duration: 250ms;
+  box-shadow: 0px 0px 12px #111;
+}
+
+.top-nav a:hover  {
+  transition-duration: 280ms;
+  transform: translateY(-14px);
+}
+
+.top-banner-overlay {
+  background-color: rgb(220, 95, 35);
+  font-size: 26px;
+  display: block;
+  font-weight: bolder;
+  padding:1px;
+  padding-left: 20px;
+  filter: drop-shadow(0 2px 3px #111);
+}
+
+
+.top-banner-overlay h1{
+  color: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card {
+  background-color: lightgray;
+  box-shadow: 0px 15px 5px black;
+  transition: 0.3;
+  padding: 20px 40px;
+  margin: 20px 5%;
+} 
